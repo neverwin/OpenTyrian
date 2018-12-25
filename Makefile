@@ -22,7 +22,7 @@ OBJS := $(SRCS:src/%.c=obj/%.o)
 # FLAGS ####################################################
 
 ifneq ($(MAKECMDGOALS), release)
-    EXTRA_CFLAGS += -g3 -O0 -Werror
+    EXTRA_CFLAGS += -g3 -O0
 else
     EXTRA_CFLAGS += -g0 -O2 -DNDEBUG
 endif
